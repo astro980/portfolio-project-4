@@ -1,0 +1,36 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+// Background Color For Themes
+@mixin bg-colors($map) {
+    @each $theme, $color in $map {
+        &--#{$theme} {
+            background: $color;
+        }
+    }
+}
+
+// Replace Images
+@mixin img-replace($img, $w, $h, $disp: block) {
+    background-image: url('#{$path--rel}/#{$img}');
+    background-repeat: no-repeat;
+    width: $w;
+    height: $h;
+    display: $disp;
+}
+
+// Pseudo Element
+
+@mixin p-el(
+    $el,
+    $el-w: null,
+    $el-h: null) {
+    
+        &:#{$el} {
+            @extend %pseudos;
+            width: $el-w;
+            height: $el-h;
+            @content;
+        }
+}
