@@ -2,3 +2,18 @@
 // Typhography
 // =====================================
 
+// Headlines
+
+.headline {
+
+    &-primary {
+        @extend %hdln-prim;
+        margin-bottom: em(70px, 42px);
+    }
+
+    &-secondary {
+        @extend %hdln-sec;
+        margin-bottom: em(24px, 24px);
+    }
+
+}

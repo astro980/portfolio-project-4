@@ -19,18 +19,11 @@ header {
 }
 
 h1 {
-  font-weight: $font-weight--light;
-  font-size: em(42px);
-  line-height: (46px / 42px);
-  margin-bottom: em(70px, 42px);
-  color: palette(grey, x-dark);
+  @extend %hdln-prim;
 }
 
 h2 {
-  font-family: $font-family--secondary;
-  font-weight: $font-weight--thin;
-  font-size: em(24px);
-  color: palette(grey, light);
+  @extend %hdln-sec;
 }
 
 h3 {
@@ -43,13 +36,30 @@ h4 {
   color: palette(grey, x-light);
   text-transform: uppercase;
   font-weight: $font-weight--medium;
-  font-size: em(14);
+  font-size: em(14px);
 }
 
 a {
   color: palette(grey, dark);
   text-decoration: none;
   font-weight: $font-weight--medium;
+}
+
+p {
+  font-size: em(18px);
+  line-height: (27px / 18px);
+  margin-bottom: 0 0 em(30px, 18px);
+  font-weight: $font-weight--light;
+}
+
+blockquote {
+  font-size: em(24px);
+  font-style: italic;
+  font-weight: $font-weight--light;
+  margin: em(32px, 24px) 0;
+  padding: 0 0 0 5%;
+  border-left: solid em(8px, 24px) $color-primary;
+  color: palette(grey, base);
 }
 
 // Lists Styles

@@ -23,7 +23,7 @@ $black    : #0b0b0b;
 $grey     : #797e83;
 
 $fountain-blue  : #52bab3;
-$emerald        : #5ece7f;
+$viking         : #58e1c1;
 $sunglo         : #e67478;
 $coral          : #ff784f;
 $purple-majesty : #9279c3;
@@ -51,14 +51,14 @@ $palettes: (
 
 $color-primary   : $fountain-blue;
 $color-secondary : $scooter;
-$color-accent    : $emerald;
+$color-accent    : $viking;
 $color-shadow    : rgba($black, .2);
 
 // UI Colors
 
 $ui-colors: (
     default : $fountain-blue,
-    success : $emerald,
+    success : $viking,
     error   : $sunglo,
     warning : $coral,
     info    : $purple-majesty,
@@ -66,7 +66,7 @@ $ui-colors: (
 
 // Border Radius
 $br--default    : .4em;
-$br--round      : 50;
+$br--round      : 50%;
 
 // Transitions
 $trns-duration  : .3s;
@@ -75,6 +75,7 @@ $trns-duration  : .3s;
 
 $base__font-size : 16px;
 $base__line      : 24px;
+$letter-space    : 1px;
 
 // Path to Assests
 $path--rel       :  "../images";

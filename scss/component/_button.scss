@@ -1,22 +1,19 @@
 // =====================================
 // Buttons Styles
 // =====================================
-
-%btn {
-    @include bg-colors($ui-colors);
-    
-    padding: 15px 30px;
-    border-radius: $br--default;
-    color: $white;
-    text-transform: uppercase;
-    font-size: em(14px);
-    font-weight: $font-weight--medium;
-    transition: opacity $trns-duration;
-    display: block;
-    &:hover {
-        opacity: .75;
-    }
-    &:active {
-        opacity: initial;
-    }
+.btn {
+    @include bg-colors($ui-colors);   
 }
+
+.link {
+    color: $scooter;
+}
+
+[class^="btn--"] {
+    @extend %btn;
+    margin-bottom: em(20px, 14px);
+    width: auto;
+    display: inline-block;
+    margin-right: em(15px, 14px);
+}
+
