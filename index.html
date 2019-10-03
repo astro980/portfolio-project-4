@@ -9,7 +9,7 @@
 </head>
 
 <body class="container">
-  <header class="row">
+  <header class="panel--padded--centered" class="row">
     <div class="col-3">
       <a class="link site-logo" href="/">
         <b class="srt">Circle Logo</b>
@@ -65,11 +65,11 @@
       <form class="form">
         <legend id="forms" class="headline-secondary">Form Elements</legend>
         <img class="img-avatar" src="images/avatar.png" alt="Avatar">
-        <label class="hidden" for="username">Username:</label>
-        <input class="input" type="text" id="username" placeholder="Username">
-        <label class="hidden" for="password">Password:</label>
-        <input class="input" type="password" id="password" placeholder="Password">
-        <button class="btn default" type="submit" value="Login">Login</button>
+        <label class="form__label--hidden" for="username">Username:</label>
+        <input class="form__input" type="text" id="username" placeholder="Username">
+        <label class="form__label--hidden" for="password">Password:</label>
+        <input class="form__input" type="password" id="password" placeholder="Password">
+        <button class="btn--default" type="submit" value="Login">Login</button>
       </form>
     </div>
   </div>
@@ -78,10 +78,10 @@
 
   <div class="row">
     <div class="col-6">
-      <img class="img img-frame" src="images/image.png" alt="sample image">
+      <img class="img--wrap" src="images/image.png" alt="sample image">
     </div>
     <div class="col-6">
-      <img class="img img-avatar" src="images/avatar.png" alt="Avatar">
+      <img class="img--avatar" src="images/avatar.png" alt="Avatar">
     </div>
   </div>
 
@@ -92,8 +92,8 @@
       <a class="btn--default">default</a>
       <a class="btn--success">success</a>
       <a class="btn--error">error</a>
-      <a class="btn--warning">warning</a>
-      <a class="btn--info">info</a>
+      <button class="btn--warning">warning</button>
+      <button class="btn--info">info</button>
     </div>
   </div>
 

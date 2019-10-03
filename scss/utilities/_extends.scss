@@ -1,6 +1,12 @@
 // ==========================================================================
 // Extends
 // ==========================================================================
+
+// Center alignment
+%center-align {
+    text-align: center;
+}
+
 // Clearfix
 
 %clearfix {
@@ -36,13 +42,15 @@
 
 %btn {    
     padding: 15px 30px;
+    border: 0;
+    width: 100%;
     border-radius: $br--default;
     color: $white;
     text-transform: uppercase;
     font-size: em(14px);
     font-weight: $font-weight--medium;
     transition: opacity $trns-duration;
-    display: inline-block;
+    display: block;
     &:hover {
         opacity: .75;
     }
@@ -67,4 +75,16 @@
     font-weight: $font-weight--thin;
     font-size: em(24px);
     color: palette(grey, light);
+}
+
+// Panels
+
+%panel-default {
+    padding-top: em(30px);
+    padding-bottom: em(20px);
+}
+
+%panel-padding {
+    padding-top: em(80px);
+    padding-bottom: em(34px);
 }

@@ -2,7 +2,13 @@
 // Grids
 // ==========================================================================
 
+// Center elements 
 
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
   
 // Screen reader text
 
@@ -24,3 +30,23 @@
   content: ''; 
   position: absolute;
 }
+
+// Panel
+
+.panel {
+
+  @extend %panel-default;
+  @include m(centered) {
+    @extend %panel-default;
+    @extend %center-align;
+  }
+  
+  @include m(padded) {
+    @extend %panel-padding;
+    @include m(centered) {
+      @extend %panel-padding;
+      @extend %center-align;
+    }
+  }
+  
+} 

@@ -62,6 +62,14 @@ blockquote {
   color: palette(grey, base);
 }
 
+// Images
+
+img {
+  margin-bottom: em(24px);
+  max-width: 100%;
+  height: auto;
+}
+
 // Lists Styles
 ul,
 li {

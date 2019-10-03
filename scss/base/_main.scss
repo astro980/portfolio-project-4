@@ -12,6 +12,7 @@
 // Site Logo
 
 .site-logo {
+    @extend .centered;
     margin-bottom: 2em;
     @include img-replace("logo.png", 150px, 85px, flex);
 }
