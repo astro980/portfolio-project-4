@@ -9,78 +9,75 @@
 </head>
 
 <body class="container">
-  <header class="panel--padded--centered" class="row">
-    <div class="col-3">
-      <a class="link site-logo" href="/">
-        <b class="srt">Circle Logo</b>
-      </a>
-    </div>
-    <div class="col-9">
-      <nav class="nav-bar" role="navigation">
-        <span class="icn-toggle">
-          <b class="srt ">Toggle</b>
-        </span>
-        <ul class="nav">
-            <li class="nav__item" ><a href="#type">Typography</a></li>
-            <li class="nav__item"><a  href="#buttons">Buttons</a></li>
-            <li class="nav__item"><a  href="#forms">Form</a></li>
-            <li class="nav__item"><a  href="#images">Images</a></li>
-            <li class="nav__item"><a  href="#grid">Grid</a></li>
-            <li class="nav__item nav__item--current"><a  href="#grid">Navigation</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <div class="row">
-    <div class="col-12">
-      <div class="card">
+  <div class="grid"> <!-- Header Grid -->
+    <header class="grid__col--12 panel--padded--centered" class="row"> <!-- Header  -->    
+        <a class="link site-logo" href="/"> <!-- Logo Site -->
+          <b class="srt">Circle Logo</b>
+        </a>    <!-- END Logo Site --> 
+      
+        <nav class="nav-bar" role="navigation"> <!-- Navigation -->
+          <span class="icn-toggle">
+            <b class="srt ">Toggle</b>
+          </span>
+          <ul class="nav">
+              <li class="nav__item" ><a href="#type">Typography</a></li>
+              <li class="nav__item"><a  href="#buttons">Buttons</a></li>
+              <li class="nav__item"><a  href="#forms">Form</a></li>
+              <li class="nav__item"><a  href="#images">Images</a></li>
+              <li class="nav__item"><a  href="#grid">Grid</a></li>
+              <li class="nav__item nav__item--current"><a  href="#grid">Navigation</a></li>
+          </ul>
+        </nav> <!-- END Navigation -->   
+    </header> <!-- END Header  -->
+  </div> <!-- END Header Grid -->
+
+  <div class="grid"> <!-- Info Grid -->
+    
+    <div class="grid__col--12">  <!-- Paraghs -->    
         <p>This is what the navigation menu looks like when the screen is at 768px or higher. When the screen is less
           than 768px,
-          the menu will be displayed vertically.</p>
-      </div>
-    </div>
-  </div>
+          the menu will be displayed vertically.</p>      
+    </div> <!-- END Paraghs -->
 
-  <div class="row">
-    <div class="col-8">
-      <div class="card">
-        <h2 id="type" class="headline-secondary">Typography</h2>
-        <h1 class="headline-primary">Take a look at this amazing headline</h1>
-        <p>This is a typical paragraph for the UI Kit. <a href="#" class="link">Here is what a link might look like</a>.
-          The
-          typical font family for this kit is Lato. This kit is intended for clean and refreshing web layouts.
-          No jazz hands here, just the essentials to make dreams come true, with minimal clean web design. The kit comes
-          fully equipped with everything from full responsive media styling to buttons to form fields. <em>I enjoy using
-            italics as well from time to time</em>.
-          Feel free to create the most amazing designs ever with this kit. I truly hope you enjoy not only the kit but
-          this
-          amazing paragraph as well. :)</p>
-        <blockquote class="blockquote">You know what really gets me going? A really nice set of block quotes. That's
-          right, block quotes that say, "Hey,
-          I'm an article you want to read and nurture."</blockquote>
-      </div>
+      <div class="grid__col--8"> <!-- Typho Grid -->    
+          <h2 id="type" class="headline-secondary">Typography</h2>
+          <h1 class="headline-primary">Take a look at this amazing headline</h1>
+          <p>This is a typical paragraph for the UI Kit. <a href="#" class="link">Here is what a link might look like</a>.
+            The
+            typical font family for this kit is Lato. This kit is intended for clean and refreshing web layouts.
+            No jazz hands here, just the essentials to make dreams come true, with minimal clean web design. The kit comes
+            fully equipped with everything from full responsive media styling to buttons to form fields. <em>I enjoy using
+              italics as well from time to time</em>.
+            Feel free to create the most amazing designs ever with this kit. I truly hope you enjoy not only the kit but
+            this
+            amazing paragraph as well. :)</p>
+          <blockquote class="blockquote">You know what really gets me going? A really nice set of block quotes. That's
+            right, block quotes that say, "Hey,
+            I'm an article you want to read and nurture."</blockquote>        
+      </div> <!-- END Typho Grid -->
+
+        <div class="grid__col--4"> <!-- Form Div -->
+          <form class="form"> <!-- Form -->
+            <legend id="forms" class="headline-secondary">Form Elements</legend>
+            <img class="img-avatar" src="images/avatar.png" alt="Avatar">
+            <label class="form__label--hidden" for="username">Username:</label>
+            <input class="form__input" type="text" id="username" placeholder="Username">
+            <label class="form__label--hidden" for="password">Password:</label>
+            <input class="form__input" type="password" id="password" placeholder="Password">
+            <button class="btn--default" type="submit" value="Login">Login</button>
+        </form> <!-- END Form -->
+      </div> <!-- END Form Div -->
     </div>
-    <div class="col-4">
-      <form class="form">
-        <legend id="forms" class="headline-secondary">Form Elements</legend>
-        <img class="img-avatar" src="images/avatar.png" alt="Avatar">
-        <label class="form__label--hidden" for="username">Username:</label>
-        <input class="form__input" type="text" id="username" placeholder="Username">
-        <label class="form__label--hidden" for="password">Password:</label>
-        <input class="form__input" type="password" id="password" placeholder="Password">
-        <button class="btn--default" type="submit" value="Login">Login</button>
-      </form>
-    </div>
-  </div>
+  </div> <!-- END Info Grid -->
 
   <h4 id="images" class="headline-secondary">Images</h4>
 
-  <div class="row">
-    <div class="col-6">
+  <div class="grid">
+    <div class="grid__col--6">
       <img class="img--wrap" src="images/image.png" alt="sample image">
     </div>
-    <div class="col-6">
+    <div class="grid__col--4">
       <img class="img--avatar" src="images/avatar.png" alt="Avatar">
     </div>
   </div>

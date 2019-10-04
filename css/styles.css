@@ -1,6 +1,11 @@
 .panel--centered, .panel--padded--centered {
   text-align: center; }
 
+.grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 .nav__item, .nav__item--current {
   display: inline-block;
   margin: 0 0.75em; }
@@ -72,28 +77,8 @@
 [class^="btn--"] {
   margin-bottom: 1.4285714286em;
   width: auto;
-  display: inline-block;
-  margin-right: 1.0714285714em; }
-
-.centered, .site-logo {
-  float: none;
-  margin-left: auto;
-  margin-right: auto; }
-
-.srt, .form__label--hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-.icn-toggle:before {
   display: block;
-  content: '';
-  position: absolute; }
+  margin-right: 1.0714285714em; }
 
 .form__label {
   display: block;
@@ -118,6 +103,73 @@
   padding: 0.75em; }
 .img--avatar {
   display: block; }
+
+.centered, .grid, .site-logo {
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
+
+.srt, .form__label--hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.icn-toggle:before {
+  display: block;
+  content: '';
+  position: absolute; }
+
+@media (min-width: 769px) {
+  .grid__col--1 {
+    width: 6.5%; }
+  .grid__col--2 {
+    width: 15%; }
+  .grid__col--3 {
+    width: 23.5%; }
+  .grid__col--4 {
+    width: 32%; }
+  .grid__col--5 {
+    width: 40.5%; }
+  .grid__col--6 {
+    width: 49%; }
+  .grid__col--7 {
+    width: 57.5%; }
+  .grid__col--8 {
+    width: 66%; }
+  .grid__col--9 {
+    width: 74.5%; }
+  .grid__col--10 {
+    width: 83%; }
+  .grid__col--11 {
+    width: 91.5%; }
+  .grid__col--12 {
+    width: 100%; } }
+
+@media (min-width: 1px) and (max-width: 768px) {
+  [class^="grid__col--"] {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em; } }
+@media (min-width: 769px) {
+  [class^="grid__col--"] {
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    [class^="grid__col--"]:last-of-type {
+      float: right; } }
+
+.grid {
+  width: 90%; }
+  [class*="grid__col--"] > .grid {
+    width: 100%; }
+  @media (min-width: 1100px) {
+    .grid {
+      max-width: 1050px; } }
 
 .headline-primary {
   margin-bottom: 1.6666666667em; }
