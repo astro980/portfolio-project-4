@@ -10,17 +10,18 @@
 
 <body class="container">
 
-  <div class="grid"> <!-- Header Grid -->
-    <header class="grid__col--12 panel--padded--centered" class="row"> <!-- Header  -->    
+  <div class="grid disp"> <!-- Header Grid -->
+    <header class="grid__col--12 panel--padded--centered" class="row"> <!-- Header  -->
+      <div class="disp-container">    
         <a class="link site-logo" href="/"> <!-- Logo Site -->
           <b class="srt">Circle Logo</b>
         </a>    <!-- END Logo Site --> 
       
         <nav class="nav-bar" role="navigation"> <!-- Navigation -->
-          <span class="icn-toggle">
+          <span id="toggle" class="icn--nav-toggle is-displayed-mobile">
             <b class="srt ">Toggle</b>
           </span>
-          <ul class="nav">
+          <ul class="nav is-collapsed-mobile">
               <li class="nav__item" ><a href="#type">Typography</a></li>
               <li class="nav__item"><a  href="#buttons">Buttons</a></li>
               <li class="nav__item"><a  href="#forms">Form</a></li>
@@ -28,7 +29,8 @@
               <li class="nav__item"><a  href="#grid">Grid</a></li>
               <li class="nav__item nav__item--current"><a  href="#grid">Navigation</a></li>
           </ul>
-        </nav> <!-- END Navigation -->   
+        </nav> <!-- END Navigation --> 
+      </div>    
     </header> <!-- END Header  -->
   </div> <!-- END Header Grid -->
 
@@ -96,35 +98,41 @@
 
   <h4 id="grid" class="headline-secondary">Grid System</h4>
 
-  <div class="row">
-    <div class="col-12 theme">.col-12</div>
-  </div>
-  <div class="row"> 
-    <div class="col-6 theme">.col-6</div>
-    <div class="col-6 theme">.col-6</div>
-  </div>
-  <div class="row">
-    <div class="col-4 theme">.col-4</div>
-    <div class="col-4 theme">.col-4</div>
-    <div class="col-4 theme">.col-4</div>
-  </div>
-  <div class="row">
-    <div class="col-3 theme">.col-3</div>
-    <div class="col-3 theme">.col-3</div>
-    <div class="col-3 theme">.col-3</div>
-    <div class="col-3 theme">.col-3</div>
-  </div>
-  <div class="row">
-    <div class="col-5 theme">.col-5</div>
-    <div class="col-7 theme">.col-7</div>
-  </div>
-  <div class="row">
-    <div class="col-8 theme">.col-8</div>
-    <div class="col-4 theme">.col-4</div>
-  </div>
-  <div class="row">
-    <div class="col-7 theme centered">.centered .col-7</div>
-  </div>
+  <div class="theme__grid">
+    <div class="grid">
+      <div class="grid__col--12">.col-12</div>
+    </div>
+    <div class="grid"> 
+      <div class="grid__col--6">.col-6</div>
+      <div class="grid__col--6">.col-6</div>
+    </div>
+    <div class="grid">
+      <div class="grid__col--4">.col-4</div>
+      <div class="grid__col--4">.col-4</div>
+      <div class="grid__col--4">.col-4</div>
+    </div>
+    <div class="grid">
+      <div class="grid__col--3">.col-3</div>
+      <div class="grid__col--3">.col-3</div>
+      <div class="grid__col--3">.col-3</div>
+      <div class="grid__col--3">.col-3</div>
+    </div>
+    <div class="grid">
+      <div class="grid__col--5">.col-5</div>
+      <div class="grid__col--7">.col-7</div>
+    </div>
+    <div class="grid">
+      <div class="grid__col--8">.col-8</div>
+      <div class="grid__col--4">.col-4</div>
+    </div>
+    <div class="grid">
+      <div class="grid__col--7 centered">
+        <div class="flex-centered">
+          .centered .col-7
+        </div>
+      </div>
+    </div>
+  </div> 
 
 </body>
 

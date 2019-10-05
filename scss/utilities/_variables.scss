@@ -29,6 +29,19 @@ $coral          : #ff784f;
 $purple-majesty : #9279c3;
 $scooter        : #39add1;
 
+//  Display Grid Background Colors
+
+$theme-grid: (
+    grid__col--12   :   #80E8D1,
+    grid__col--6    :   #4DA2BB,
+    grid__col--4    :   #7EE6FD,
+    grid__col--3    :   #DEB2EE,
+    grid__col--5    :   #88D9A0,
+    grid__col--7    :   #EC9FA3,
+    grid__col--8    :   #FD9F85
+      
+);
+
 //  Color Palette Modifiers
 
 $palettes: (

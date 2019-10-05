@@ -19,18 +19,25 @@
 
 // Nav Extends Items
 
-%nav-item-disp {
-    display: inline-block;
-    margin: 0 em(12px);
+%nav-item-horz {
+    @include mq(medium) {
+        display: inline-block;
+        margin: 0 em(12px);
+    }
 }
 
 %nav-item-link {
+    text-align: center;
     font-size: em(18px);
     font-weight: $font-weight--light;
     display: block;
     padding: em(8px, 18px);
     border: 1px solid transparent;
     transition: $trns-duration;
+    @include mq(small) {
+        padding-top: em(14px, 18px);
+        padding-bottom: em(14px, 18px);
+    }
 }
 %nav-item-on {
     background: $viking;
@@ -43,7 +50,6 @@
 %btn {    
     padding: 15px 30px;
     border: 0;
-    width: 100%;
     border-radius: $br--default;
     color: $white;
     text-transform: uppercase;
@@ -79,28 +85,19 @@
 
 // Panels
 
-// %panel-default {
-//     padding-top: em(30px);
-//     @include mq(medium) {
-//         padding-bottom: em(20px);
-//         }
-//     }
-
-//     %panel-padding {
-//     padding-top: em(34px);
-//     @include mq(medium) {
-//         padding-top: em(80px);
-//         padding-bottom: em(34px);
-//     }
-// }
-
 %panel-default {
     padding-top: em(30px);
-    padding-bottom: em(20px);
+    @include mq(medium) {
+        padding-bottom: em(20px);
+        }
+    }
 
+    %panel-padding {
+    padding-top: em(34px);
+    @include mq(medium) {
+        padding-top: em(80px);
+        padding-bottom: em(34px);
+    }
 }
 
-%panel-padding {
-    padding-top: em(80px);
-    padding-bottom: em(34px);
-}
+

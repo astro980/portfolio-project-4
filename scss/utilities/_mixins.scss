@@ -94,3 +94,11 @@
     }
 }
 
+// Generate Theme Color Display Classes
+
+@each $value, $color in $theme-grid {
+    .theme__grid .#{$value} {
+        background-color: $color;
+    }    
+}
+

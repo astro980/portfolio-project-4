@@ -102,3 +102,25 @@
     max-width: $g-cont-max-w;
   }
 }
+
+//  Theme Grid Display
+
+.theme__grid {  
+  .grid [class*="grid__col"] {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: $font-weight--thin;
+    margin-bottom: em(16px);
+    padding: 1.75%;
+    
+  } 
+}
+
+@media (min-width: $brkpoint-md ) {
+  .disp-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
