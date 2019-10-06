@@ -22,7 +22,8 @@
 %nav-item-horz {
     @include mq(medium) {
         display: inline-block;
-        margin: 0 em(12px);
+        margin: 0 em(2px);
+        z-index: 100;
     }
 }
 

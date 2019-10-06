@@ -3,6 +3,17 @@
 // =====================================
 
 .form {
+    @media (min-width: $brkpoint-sm) {    
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        img {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     @include e(label) {
         @include m(hidden) {
             @extend .srt;

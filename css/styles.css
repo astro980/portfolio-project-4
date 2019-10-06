@@ -31,7 +31,8 @@
 @media (min-width: 769px) {
   .nav__item, .nav__item--current {
     display: inline-block;
-    margin: 0 0.75em; } }
+    margin: 0 0.125em;
+    z-index: 100; } }
 
 .nav__item a {
   text-align: center;
@@ -118,6 +119,16 @@
       [class^="btn--"] + [class^="btn--"] {
         margin-left: 20px; } }
 
+@media (min-width: 1px) {
+  .form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center; }
+    .form img {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto; } }
 .form__label {
   display: block;
   margin-bottom: 0.625em; }
@@ -142,7 +153,7 @@
 .img--avatar {
   display: block; }
 
-.centered, .grid, .site-logo {
+.centered, .img, .img--wrap, .img--avatar, .grid, .site-logo {
   float: none;
   margin-left: auto;
   margin-right: auto; }
@@ -198,6 +209,8 @@
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px; }
+    [class^="grid__col--"] + [class^="grid__col--"] {
+      margin-left: 2%; }
     [class^="grid__col--"]:last-of-type {
       float: right; } }
 
@@ -209,19 +222,26 @@
     .grid {
       max-width: 1050px; } }
 
-.theme__grid .grid [class*="grid__col"] {
+.theme__grid {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 100;
-  margin-bottom: 1em;
-  padding: 1.75%; }
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between; }
+  .theme__grid .grid [class*="grid__col"] {
+    justify-items: space-evenly;
+    font-weight: 100;
+    margin-bottom: 1em;
+    padding: 1.75%;
+    border-radius: 0.4em; }
 
 @media (min-width: 768px) {
   .disp-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+
+  .theme__grid {
+    justify-content: center; } }
 .headline-primary {
   margin-bottom: 1.6666666667em; }
 .headline-secondary {
@@ -238,7 +258,8 @@
   background-repeat: no-repeat;
   width: 150px;
   height: 85px;
-  display: flex; }
+  display: flex;
+  z-index: 999; }
 
 .icn-toggle {
   width: 25px;

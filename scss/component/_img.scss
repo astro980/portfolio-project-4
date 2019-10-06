@@ -3,13 +3,15 @@
 // =====================================
 
 .img {
-
+    @extend .centered;
     @include m(wrap) {
+        @extend .centered;
         border: 1px solid palette(grey, x-light);
         padding: em(12px);
     }
 
     @include m(avatar) {
+        @extend .centered;
         display: block;
     }
     

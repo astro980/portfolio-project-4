@@ -72,6 +72,7 @@
   }
 
   @include mq(medium) {
+    @include doubly(percentage($g-gutter-width / $context));
     float: left;
     min-height: 1px;
     padding-left: 10px;
@@ -106,14 +107,16 @@
 //  Theme Grid Display
 
 .theme__grid {  
-  .grid [class*="grid__col"] {    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  .grid [class*="grid__col"] {       
+    justify-items: space-evenly;
     font-weight: $font-weight--thin;
     margin-bottom: em(16px);
-    padding: 1.75%;
-    
+    padding: 1.75%;  
+    border-radius: $br--default;     
   } 
 }
 
@@ -122,5 +125,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .theme__grid {
+    justify-content: center;
   }
 }
