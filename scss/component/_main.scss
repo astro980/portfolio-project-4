@@ -2,23 +2,10 @@
 // Main Styles
 // ==========================================================================
 
-// Layout
-.container {
-    max-width: em(1000px);
-    margin: 0 auto;
-    padding: 0 em(15px) em(50px) em(15px);
-}
 
-// Site Logo
 
-.site-logo {
-    @extend .centered;
-    margin-bottom: 2em;
-    @include img-replace("logo.png", 150px, 85px, flex);
-    z-index: 999;
-}
-
-// Icon Toggle
+// Icon Toggle For Future Use
+// Under Construction "Don't Mind This"
 
 .icn-toggle {
     @include p-el(before, 25px, 3px) {
