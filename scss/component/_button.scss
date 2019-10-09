@@ -4,6 +4,10 @@
 .btn {
     @include bg-colors($ui-colors);   
 }
+.btn-log {
+    @extend %btn;
+    width: 50%;
+} 
 
 .link {
     color: $scooter;
@@ -11,15 +15,15 @@
 
 [class^="btn--"] {
     @extend %center-align;
-    @extend %btn;
+    @extend %btn;    
     margin-bottom: em(20px, 14px);
     @include mq(small) {
         width: 100%;
-    }
+    }    
     @include mq(medium) {
-        width: auto;
+        width: 18%;
         display: inline-block;
         @include doubly(20px);
-    }
+    }    
 }
 
